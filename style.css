@@ -27,6 +27,12 @@
     height: 220px;
     text-decoration: none !important;
 }
+.row.eq-height.no-gutters {
+	display: block;
+}
+.row.eq-height.no-gutters .col-xs-5ths {
+	display: inline-block;
+}
 @media (min-width: 768px) {
 	#social-boxes .social-links a {
 		height: 495px;
