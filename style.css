@@ -1,0 +1,62 @@
+/*--Social Media Accordian--*/
+#social-boxes {
+	overflow: hidden;
+ 
+}
+#social-boxes .row.eq-height {
+	flex-wrap: nowrap;
+}
+#social-boxes #social-header {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width: 768px){
+	#social-boxes #social-header {
+		height: 495px;
+	}
+}
+#social-boxes #social-header img {
+	width: 300px;
+}
+#social-boxes .social-links a {
+	position: relative;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    text-decoration: none !important;
+}
+@media (min-width: 768px) {
+	#social-boxes .social-links a {
+		height: 495px;
+	}
+}
+#social-boxes .social-links .fa {
+	position: relative;
+	z-index: 3;
+	font-size: 8vw;
+	color: #fff;
+}
+#social-boxes .social-links img {
+	position: absolute;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	filter: grayscale(1) brightness(0.5);
+	transition: all 0.33s ease;
+}
+#social-boxes .social-links a:hover img {
+	filter: grayscale(0) brightness(1);
+}
+#social-boxes .col-xs-5ths {
+	transition: all 0.33s ease;
+}
+#social-boxes .col-xs-5ths.grow {
+	flex: 0 0 28%;
+    max-width: 28%;
+}
+#social-boxes .col-xs-5ths.shrink {
+	flex: 0 0 18%;
+    max-width: 18%;
+}
